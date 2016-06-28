@@ -4,7 +4,7 @@
   "description": "An application use React server rendering with Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server --exec babel-node --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -22,17 +22,26 @@
   },
   "homepage": "https://github.com/xuhaiming/ReactServerRendering#readme",
   "dependencies": {
+    "lodash": "^4.13.1",
     "react": "^15.1.0",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "restify": "^4.1.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "css-loader": "^0.23.1",
     "express": "^4.14.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
